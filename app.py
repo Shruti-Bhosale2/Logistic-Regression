@@ -1,165 +1,31 @@
-{
- "cells": [
-  {
-   "cell_type": "code",
-   "execution_count": 4,
-   "id": "cbeac789-2bfc-4383-8f22-6ff0e6554079",
-   "metadata": {},
-   "outputs": [
-    {
-     "name": "stderr",
-     "output_type": "stream",
-     "text": [
-      "2025-11-26 10:57:21.182 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.\n",
-      "2025-11-26 10:57:21.183 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.\n",
-      "2025-11-26 10:57:21.185 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.\n",
-      "2025-11-26 10:57:21.187 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.\n",
-      "2025-11-26 10:57:21.197 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.\n",
-      "2025-11-26 10:57:21.198 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.\n",
-      "2025-11-26 10:57:21.199 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.\n",
-      "2025-11-26 10:57:21.200 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.\n",
-      "2025-11-26 10:57:21.202 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.\n",
-      "2025-11-26 10:57:21.209 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.\n",
-      "2025-11-26 10:57:21.210 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.\n",
-      "2025-11-26 10:57:21.211 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.\n",
-      "2025-11-26 10:57:21.212 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.\n",
-      "2025-11-26 10:57:21.214 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.\n",
-      "2025-11-26 10:57:21.215 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.\n",
-      "2025-11-26 10:57:21.216 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.\n",
-      "2025-11-26 10:57:21.219 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.\n",
-      "2025-11-26 10:57:21.220 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.\n",
-      "2025-11-26 10:57:21.226 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.\n",
-      "2025-11-26 10:57:21.227 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.\n",
-      "2025-11-26 10:57:21.228 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.\n",
-      "2025-11-26 10:57:21.229 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.\n",
-      "2025-11-26 10:57:21.231 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.\n",
-      "2025-11-26 10:57:21.232 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.\n",
-      "2025-11-26 10:57:21.233 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.\n",
-      "2025-11-26 10:57:21.243 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.\n",
-      "2025-11-26 10:57:21.244 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.\n",
-      "2025-11-26 10:57:21.245 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.\n",
-      "2025-11-26 10:57:21.247 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.\n",
-      "2025-11-26 10:57:21.249 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.\n",
-      "2025-11-26 10:57:21.251 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.\n",
-      "2025-11-26 10:57:21.259 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.\n",
-      "2025-11-26 10:57:21.260 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.\n",
-      "2025-11-26 10:57:21.261 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.\n",
-      "2025-11-26 10:57:21.264 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.\n",
-      "2025-11-26 10:57:21.264 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.\n",
-      "2025-11-26 10:57:21.266 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.\n",
-      "2025-11-26 10:57:21.268 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.\n",
-      "2025-11-26 10:57:21.269 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.\n",
-      "2025-11-26 10:57:21.270 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.\n",
-      "2025-11-26 10:57:21.271 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.\n",
-      "2025-11-26 10:57:21.276 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.\n",
-      "2025-11-26 10:57:21.276 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.\n",
-      "2025-11-26 10:57:21.278 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.\n",
-      "2025-11-26 10:57:21.278 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.\n",
-      "2025-11-26 10:57:21.280 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.\n",
-      "2025-11-26 10:57:21.281 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.\n",
-      "2025-11-26 10:57:21.281 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.\n",
-      "2025-11-26 10:57:21.283 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.\n",
-      "2025-11-26 10:57:21.284 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.\n",
-      "2025-11-26 10:57:21.287 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.\n",
-      "2025-11-26 10:57:21.292 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.\n",
-      "2025-11-26 10:57:21.293 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.\n",
-      "2025-11-26 10:57:21.294 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.\n",
-      "2025-11-26 10:57:21.298 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.\n",
-      "2025-11-26 10:57:21.299 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.\n",
-      "2025-11-26 10:57:21.300 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.\n",
-      "2025-11-26 10:57:21.303 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.\n",
-      "2025-11-26 10:57:21.309 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.\n",
-      "2025-11-26 10:57:21.311 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.\n"
-     ]
-    }
-   ],
-   "source": [
-    "import streamlit as st\n",
-    "import pandas as pd\n",
-    "import joblib\n",
-    "\n",
-    "# Load the trained model\n",
-    "# Ensure 'logistic_regression_model.pkl' is in the same directory as app.py\n",
-    "model = joblib.load('logistic_regression_model.pkl')\n",
-    "\n",
-    "def main():\n",
-    "    st.title('Diabetes Prediction App')\n",
-    "    st.write('Enter the patient\\u2019s details to predict the likelihood of diabetes.')\n",
-    "\n",
-    "    # Input fields for each feature\n",
-    "    pregnancies = st.slider('Pregnancies', 0, 17, 3)\n",
-    "    glucose = st.slider('Glucose (mg/dL)', 40, 200, 120) # Adjusted range based on EDA\n",
-    "    blood_pressure = st.slider('Blood Pressure (mmHg)', 20, 122, 70) # Adjusted range based on EDA\n",
-    "    skin_thickness = st.slider('Skin Thickness (mm)', 0, 99, 20) # Adjusted range based on EDA\n",
-    "    insulin = st.slider('Insulin (mu/U)', 0, 850, 80) # Adjusted range based on EDA\n",
-    "    bmi = st.slider('BMI', 15.0, 70.0, 30.0)\n",
-    "    diabetes_pedigree_function = st.slider('Diabetes Pedigree Function', 0.078, 2.42, 0.47) # Adjusted range based on EDA\n",
-    "    age = st.slider('Age (years)', 21, 81, 30)\n",
-    "\n",
-    "    # Store inputs in a DataFrame for prediction\n",
-    "    input_data = {\n",
-    "        'Pregnancies': pregnancies,\n",
-    "        'Glucose': glucose,\n",
-    "        'BloodPressure': blood_pressure,\n",
-    "        'SkinThickness': skin_thickness,\n",
-    "        'Insulin': insulin,\n",
-    "        'BMI': bmi,\n",
-    "        'DiabetesPedigreeFunction': diabetes_pedigree_function,\n",
-    "        'Age': age\n",
-    "    }\n",
-    "    input_df = pd.DataFrame([input_data])\n",
-    "\n",
-    "    # Prediction button\n",
-    "    predict_button = st.button('Predict Diabetes Likelihood')\n",
-    "\n",
-    "    if predict_button:\n",
-    "        # Make prediction\n",
-    "        prediction = model.predict(input_df)\n",
-    "        prediction_proba = model.predict_proba(input_df)\n",
-    "\n",
-    "        st.subheader('Prediction Result:')\n",
-    "        if prediction[0] == 1:\n",
-    "            st.write('<p style=\"font-size:20px; color:red;\">Likely to have diabetes</p>', unsafe_allow_html=True)\n",
-    "            st.write(f\"Probability of Diabetes: **{prediction_proba[0][1]*100:.2f}%**\")\n",
-    "        else:\n",
-    "            st.write('<p style=\"font-size:20px; color:green;\">Unlikely to have diabetes</p>', unsafe_allow_html=True)\n",
-    "            st.write(f\"Probability of No Diabetes: **{prediction_proba[0][0]*100:.2f}%**\")\n",
-    "\n",
-    "        st.write(\"\\n---\\n\")\n",
-    "        st.write(\"**Note:** This prediction is based on the trained model and provided inputs. Consult a medical professional for diagnosis.\")\n",
-    "\n",
-    "if __name__ == '__main__':\n",
-    "    main()"
-   ]
-  },
-  {
-   "cell_type": "code",
-   "execution_count":,
-   "id": "0db8487b-9172-44d8-badc-23fe84e97e66",
-   "metadata": {},
-   "outputs": [],
-   "source": []
-  }
- ],
- "metadata": {
-  "kernelspec": {
-   "display_name": "Python 3",
-   "language": "python",
-   "name": "python3"
-  },
-  "language_info": {
-   "codemirror_mode": {
-    "name": "ipython",
-    "version": 3
-   },
-   "file_extension": ".py",
-   "mimetype": "text/x-python",
-   "name": "python",
-   "nbconvert_exporter": "python",
-   "pygments_lexer": "ipython3",
-   "version": "3.13.5"
-  }
- },
- "nbformat": 4,
- "nbformat_minor": 5
-}
+import streamlit as st
+import pickle
+import numpy as np
+
+st.title("Diabetes Prediction using Logistic Regression")
+
+# Load model
+model = pickle.load(open("model.pkl", "rb"))
+
+st.header("Enter Patient Details")
+
+pregnancies = st.number_input("Pregnancies", min_value=0)
+glucose = st.number_input("Glucose", min_value=0)
+blood_pressure = st.number_input("Blood Pressure", min_value=0)
+skin_thickness = st.number_input("Skin Thickness", min_value=0)
+insulin = st.number_input("Insulin", min_value=0)
+bmi = st.number_input("BMI")
+dpf = st.number_input("Diabetes Pedigree Function")
+age = st.number_input("Age", min_value=0)
+
+if st.button("Predict"):
+    input_data = np.array([[pregnancies, glucose, blood_pressure,
+                            skin_thickness, insulin, bmi, dpf, age]])
+    
+    prediction = model.predict(input_data)
+
+    if prediction[0] == 1:
+        st.error("The person is likely to have Diabetes")
+    else:
+        st.success("The person is not likely to have Diabetes")
+
