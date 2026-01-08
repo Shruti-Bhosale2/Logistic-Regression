@@ -5,7 +5,7 @@ import numpy as np
 st.title("Diabetes Prediction using Logistic Regression")
 
 # Load model
-model = pickle.load(open("logistic_regression_model.pkl", "rb"))
+model = pickle.load(open("model.pkl", "rb"))
 
 st.header("Enter Patient Details")
 
